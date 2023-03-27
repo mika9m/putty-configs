@@ -1,0 +1,2 @@
+Name,HostName,Protocol,PortNumber,UserName
+Example Session,192.168.11.111,ssh,22,exampleusername
