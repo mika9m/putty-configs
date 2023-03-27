@@ -1,3 +1,9 @@
+$mydocspath=[environment]::GetFolderPath('MyDocuments')
+
+New-Item -ItemType Directory -Path $mydocspath-Name PuTTY_logs -Force
+
+$puttylogpath=$mydocspath+"\PuTTY_logs"
+
 $Items=Get-ChildItem -Path HKCU:\SOFTWARE\SimonTatham\PuTTY\Sessions\ | Select-Object Name
 
 foreach ($Item in $Items) {
@@ -10,7 +16,8 @@ foreach ($Item in $Items) {
     Set-ItemProperty -Path $path -Name "Font" -Value "Consolas" -Type String
     Set-ItemProperty -Path $path -Name "PasteRTF" -Value 1
     Set-ItemProperty -Path $path -Name "LogType" -Value 1
-    Set-ItemProperty -Path $path -Name "LogFileName" -Value "C:\temp\PuTTY_logs\putty_log_&P_&H_&Y-&M-&D_&T.txt"
+    #Set-ItemProperty -Path $path -Name "LogFileName" -Value "C:\temp\PuTTY_logs\putty_log_&P_&H_&Y-&M-&D_&T.txt"
+    Set-ItemProperty -Path $path -Name "LogFileName" -Value $puttylogpath+"\putty_log_&P_&H_&Y-&M-&D_&T.txt"
     Set-ItemProperty -Path $path -Name "TCPKeepalives" -Value 1
     Set-ItemProperty -Path $path -Name "PingIntervalSecs" -Value 300
     Set-ItemProperty -Path $path -Name "AgentFwd" -Value 1
