@@ -1,6 +1,15 @@
 # putty-configs
 PowerShell scripts to fix PuTTY configs and create new sessions from CSV
 
+**Please read, understand and modify if needed before running!**
+
+Before running, backup your existing sessions and settings:
+
+    reg export HKCU\Software\SimonTatham\PuTTY\Sessions ([Environment]::GetFolderPath("Desktop") + "\putty-sessions.reg") /Y
+
+    reg export HKCU\Software\SimonTatham ([Environment]::GetFolderPath("Desktop") + "\putty.reg") /Y
+
+
 ## putty_create_sessions_from_csv.ps1
 Create new PuTTY sessions from putty_sessions.csv
 
