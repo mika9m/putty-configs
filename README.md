@@ -15,6 +15,10 @@ To import backups back:
 
     reg import ([Environment]::GetFolderPath("MyDocuments") + "\putty.reg")
 
+Before running, you might need to run:
+
+    Set-ExecutionPolicy -Scope CurrentUser Unrestricted
+
 ## putty_create_sessions_from_csv.ps1
 Create new PuTTY sessions from putty_sessions.csv
 
