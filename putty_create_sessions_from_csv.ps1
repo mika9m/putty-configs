@@ -1,5 +1,7 @@
+$mydocspath=[environment]::GetFolderPath('MyDocuments')
+
 # Define the path to the CSV file containing the session information
-$csvPath = "C:\temp\putty_sessions.csv"
+$csvPath = $mydocspath+"\putty_sessions.csv"
 
 # Import the CSV file as an array of objects
 $sessionData = Import-Csv -Path $csvPath
