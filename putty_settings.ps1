@@ -1,6 +1,6 @@
 $mydocspath=[environment]::GetFolderPath('MyDocuments')
 
-New-Item -ItemType Directory -Path $mydocspath-Name PuTTY_logs -Force
+New-Item -ItemType Directory -Path $mydocspath -Name PuTTY_logs -Force
 
 $puttylogpath=$mydocspath+"\PuTTY_logs"
 
