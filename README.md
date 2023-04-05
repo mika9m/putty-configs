@@ -33,7 +33,7 @@ Change window title to session name for every PuTTY session in registry
 Change settings for all PuTTY sessions:
 - Change font to 11pt Consolas
 - Enable RTF copy to clipboard
-- Enable logging to C:\temp\PuTTY_logs
+- Enable logging to MyDocuments\PuTTY_logs
 - Enable TCP keepalives
 - Enable agent forwarding
 - Change colors to black on light grey
