@@ -26,7 +26,7 @@ foreach ($Item in $Items) {
     Set-ItemProperty -Path $path -Name "Colour2"  -Value "244,244,244"
     Set-ItemProperty -Path $path -Name "Colour3"  -Value "244,244,244"
     Set-ItemProperty -Path $path -Name "Colour4"  -Value "63,63,63"
-    Set-ItemProperty -Path $path -Name "Colour5"  -Value "62,62,62"
+    Set-ItemProperty -Path $path -Name "Colour5"  -Value "255,128,0"
     Set-ItemProperty -Path $path -Name "Colour6"  -Value "62,62,62"
     Set-ItemProperty -Path $path -Name "Colour7"  -Value "102,102,102"
     Set-ItemProperty -Path $path -Name "Colour8"  -Value "151,11,22"
