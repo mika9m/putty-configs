@@ -20,7 +20,7 @@ Before running, you might need to run:
      Set-ExecutionPolicy RemoteSigned
 
 or
-    Set-ExecutionPolicy -Scope CurrentUser Unrestricted
+     Set-ExecutionPolicy -Scope CurrentUser Unrestricted
 
 ## putty_create_sessions_from_csv.ps1
 Create new PuTTY sessions from putty_sessions.csv
