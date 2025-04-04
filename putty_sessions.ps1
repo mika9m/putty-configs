@@ -72,8 +72,8 @@ foreach ($Item in $Items) {
     Set-ItemProperty -Path $path -Name "Colour17"  -Value "255,162,159"
     Set-ItemProperty -Path $path -Name "Colour18"  -Value "137,209,236"
     Set-ItemProperty -Path $path -Name "Colour19"  -Value "28,250,254"
-    Set-ItemProperty -Path $path -Name "Colour20"  -Value "255,255,255"
-    Set-ItemProperty -Path $path -Name "Colour21"  -Value "255,255,255"
+    Set-ItemProperty -Path $path -Name "Colour20"  -Value "128,128,128"
+    Set-ItemProperty -Path $path -Name "Colour21"  -Value "255,255,128"
 }
 
 # Construct the base path to the Putty session registry keys
